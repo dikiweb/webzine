@@ -1,0 +1,206 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* Fontawesome 4.7 */
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: 1.5em;
+  font-weight: 300;
+  color: #222;
+  background-color: #131c29;
+  margin: 0;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+.vertical-horizontal-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginbox {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  height: 515px;
+  width: 500px;
+}
+
+.loginbox h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.loginbox .login_welcome {
+  font-size: 12px;
+  text-align: center;
+}
+
+.loginbox .login_welcome span {
+  font-weight: 700;
+}
+
+.loginbox .warning {
+  width: 400px;
+  color: crimson;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.loginbox .warning em {
+  display: inline-block;
+  color: #222;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.loginbox form span {
+  font-weight: bold;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 4px;
+}
+
+.loginbox form .input-group-login {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.loginbox form .form-control-custom {
+  width: 430px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding-left: 40px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.loginbox form .input-group-login .fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: gray;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+.loginbox form .input-group-login input:hover {
+  box-shadow: 0 0 5px gray;
+}
+
+.loginbox form .input-group-login input:focus {
+  border: 1px solid #b42127;
+  box-shadow: 0 0 5px #b42127;
+}
+
+.loginbox form .input-group-login input:focus + .fa {
+  color: #b42127;
+}
+
+.loginbox form .input-group-login input:focus::placeholder {
+  visibility: hidden;
+}
+
+.loginbox form .input-group-login input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.btn-aline {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  border: none;
+  padding: 7px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #b42127;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8a0d12;
+}
+
+.loginbox .returnlogin {
+  background-color: #131c29;
+}
+
+.loginbox .gotopass {
+  font-size: 13px;
+  width: 95%;
+  font-weight: bold;
+  text-align: right;
+}
+
+.loginbox  .gotopass-rest {
+  height: 35px;
+}
+
+.loginbox .gotopass a:hover {
+  color: #b42127;
+}
+
+.errorbox-hedder {
+  color: #fff;
+  text-align: center;
+  font-size: 200px;
+  font-weight: bold;
+  text-shadow: -1px 0 #131c29, 0 1px #131c29, 1px 0 #131c29, 0 -1px #131c29;
+  padding-bottom: 18px;
+}
+
+.errorbox {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  height: 300px;
+  width: 800px;
+}
+
+.errer-code {
+  margin-top: 60px;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: -4px;
+  color: #131c29;
+  padding-left: 90px;
+}
+
+.errer-message {
+  font-size: 14px;
+  font-weight: bolder;
+  margin-top: 50px;
+  padding-left: 110px;
+}
+.errer-message_2 {
+  margin-top: -15px;
+  font-weight: bolder;
+  padding-left: 110px;  
+}

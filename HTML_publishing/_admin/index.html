@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login: Welcome to the Back Office Management System</title>
+
+    <!-- 부트스트랩과 사용할 폰트 -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+
+    <!-- Toastr style -->
+    <link rel="stylesheet" href="../assets/css/plugins/toastr/toastr.min.css">
+
+    <!-- Gritter -->
+    <link rel="stylesheet" href="../assets/js/plugins/gritter/jquery.gritter.css">
+
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!--- 로그인, 비림번호 찾기 및 Error 페이지 용 --->
+    <link rel="stylesheet" href="../assets/css/intro.css">    
+    
+</head>
+<body>
+    <div class="vertical-horizontal-center">
+        <div class="animated fadeInDown">
+            <div class="loginbox">
+
+                <h1>Employee Login</h1>
+                <p class="login_welcome">
+                    Welcome to <span>the Back Office Management System</span>
+                </p>
+
+                <p class="warning">
+                    이 Management System에 허락없이 접근하는 것은 명백한 범법 행위이며, <br>
+                    무단접근하면 사이버수사대의 추적을 받을 수도 있습니다. <br><br>
+                    <em>Management System 사용을 위한 ID 신청은 관리자에게 문의 바랍니다.</em>
+                </p>
+
+                <form action="./main.html" class="items">
+
+                    <span>ID</span>
+                    <label for="employeeid" class="sr-only">Employee ID</label>
+                    <div class="input-group-login">
+                        <input class="form-control-custom" type="text" name="employee_id" placeholder="Employee ID" id="employeeid" value="" required="required">
+                        <i class="fa fa-user"></i>
+                    </div>
+
+                    <span>Password</span>
+                    <label for="employeepasswd" class="sr-only">Employee Password</label>
+                    <div class="input-group-login">
+                        <input class="form-control-custom" type="password" name="employee_passwd" placeholder="Password" id="employeepasswd" value="" required="required">
+                        <i class="fa fa-lock"></i>
+                    </div>
+
+                    <p class="gotopass">
+                        <a href="./forgotpassword.html">비밀번호 찾기</a>
+                    </p>
+                    
+                    <div class="btn-aline">
+                        <button type="button" onclick="location.href='./main.html'">로그인</button>
+                    </div>
+                    
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="../assets/js/jquery-3.1.1.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>
