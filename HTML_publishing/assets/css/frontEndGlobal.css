@@ -1,0 +1,44 @@
+/* Google Web Font */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+/* XEION CDN */
+@import url("http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* Fontawesome 4.7 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  border: 0;
+}
+
+body {
+  background: #fff;
+  font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  color: #222;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjus: 100%;  /* iphone font size 변경 방지 */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 5px;
+}
+
+a, a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #b42127;
+}
+

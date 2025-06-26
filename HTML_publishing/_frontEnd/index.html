@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to FrontEnd: index</title>
+
+  <!--- 파비콘 --->
+  <link rel="shortcut icon" as="image" href="../assets/images/favicon.ico">
+
+  <!-- 부트스트랩과 사용할 폰트 -->
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
+
+  <!-- Toastr style -->
+  <link rel="stylesheet" href="../assets/css/plugins/toastr/toastr.min.css">
+
+  <!-- Gritter -->
+  <link rel="stylesheet" href="../assets/js/plugins/gritter/jquery.gritter.css">
+  <link rel="stylesheet" href="../assets/css/animate.css">
+  
+  <link rel="stylesheet" href="../assets/css/frontEndGlobal.css">
+  <link rel="stylesheet" href="../assets/css/user_layout.css">
+
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row" id="header_wrap">
+
+      <div class="container">
+        <div class="row">
+                <div class="logo"><a href="#"><img src="../assets/images/openai_log.png" alt="logo"></a></div>
+                <div class="header_date">2025.06.05</div>
+
+                <!-- 로그인 -->
+                <div class="header_login">
+                  <span class="login"><a href="#">로그 인</a></span>
+                  <span><a href="#">회원 가입</a></span>
+                </div>
+                <!-- 로그인 
+                <div class="header_login">
+                  <span class="login"><a href="#">로그 아웃</a></span>
+                  <span><a href="#">마이 페이지</a></span>
+                </div>
+                -->
+        </div>
+      </div>
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="globalMune">
+      <div class="container">
+        <div class="row">
+          <nav>
+                  <section>
+                    <ul class="mainMenu">
+                      <li>
+                        <a href="#">피플</a>
+                      </li>
+                      <li><a href="#" >헬스</a></li>
+                      <li><a href="#" >라이프</a></li>
+                      <li><a href="#" >컬처</a></li>
+                      <li><a href="#" >머니</a></li>
+                      <li><a href="#" >테마</a></li>
+                      <li><a href="#" >카드 뉴스</a></li>
+                      <li><a href="#" >스페셜</a></li>
+                    </ul>
+                    <div class="search"><a class="img_element search_ico imgch" id="trigger"><i class="bi bi-search"></i></a></div>
+                  </section>               
+                </nav>
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div><!--- 메뉴 끝 --->
+
+    <div class="row" id="searchLayer">
+      <div class="container">
+        <div class="row">
+          <!-- search layer -->
+          <article>
+              <section>
+                  <div>
+                      <form name="frmsearch" method="get" action="#">
+                        <input class="searchField" size="40" name="varSrchKwd" type="text" placeholder="검색어를 입력해 주세요." required="">
+                        <button type="submit" class="bi bi-search searchIcon" title="search"></button>
+                      </form>
+                  </div>
+              </section>
+          </article>
+          <div id="popup_wrapper"></div>  
+          <!-- //search layer -->
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!--- searchLayer 끝 --->
+
+    <div class="row" id="Topnews_Wrap">
+      <div class="container">
+        <div class="row">
+          <div class="mainNewsTitle">
+            <dl>
+                <dt class="hdlineNewsTitle"><a href="/view/atc_view/16393">50자 안에 담긴 인생… 노년이 ‘짧은 시’ 주목하는 이유</a></dt>
+                <dd class="hdlineNewsText">
+                  시는 정형을 요구하지 않는다. 길고 짧음, 쉬움과 난해함을 가리지 않고, 진심 어린 언어라면 모두 시가 된다. 그 가운데 최근 시니어 세대를 중심으로 ‘짧은 시’를 향한 관심이 두드러지고 있다. 짧은 시 한 편에는 긴 세월의 삶과 정서가 응축돼 있어 오히려 장문의 시보다 더 깊은 울림을 준다. 짧은 시가 본격적으로 주목받기 시작한 계기는 
+                </dd>
+              </dl>
+          </div>
+          <div class="mainNewsImg">
+            <a href="#"><img src="https://img.etoday.co.kr/web/bravo/MT10_0.png?v=1749134680" alt="50자 안에 담긴 인생…  노년이 ‘짧은 시’ 주목하는 이유"></a>
+          </div>
+          <!--- 헤드라인 --->
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="mainTop3News">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/web/bravo/MT10_3.jpg?v=1749164148" alt="초고령사회 해법에 ‘에이지테크’  정부, R&amp;D 연 1조 투자">
+              </div>
+              <div class="title">
+                초고령사회 해법에 ‘에이지테크’ 정부, R&amp;D 연 1조 투자
+              </div>
+              <div class="mainToptxt mainToptxt_reduce">
+                정부가 초고령사회 대응을 위한 핵심 전략으로 에이지테크(Age-Tech)를 공식 채택하고, 민관 협력을 통한 산업 생태계 조성에 박차를 가하고 있다. 정부는 지난 3월 Age-Tech 기반 실버경제 육성전략을 발표한 데 이어, 5월에는 민관 얼라이언스를 출범시키며 정책 방향과 실행 방안을 구체화했다. 지난 29일 서울 코엑스에서 열린
+              </div>
+            </a>
+          </div>
+
+
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/web/bravo/MT10_3.jpg?v=1749164148" alt="초고령사회 해법에 ‘에이지테크’  정부, R&amp;D 연 1조 투자">
+              </div>
+              <div class="title">
+                초고령사회 해법에 ‘에이지테크’ 정부, R&amp;D 연 1조 투자
+              </div>
+              <div class="mainToptxt mainToptxt_reduce">
+                정부가 초고령사회 대응을 위한 핵심 전략으로 에이지테크(Age-Tech)를 공식 채택하고, 민관 협력을 통한 산업 생태계 조성에 박차를 가하고 있다. 정부는 지난 3월 Age-Tech 기반 실버경제 육성전략을 발표한 데 이어, 5월에는 민관 얼라이언스를 출범시키며 정책 방향과 실행 방안을 구체화했다. 지난 29일 서울 코엑스에서 열린
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/web/bravo/MT10_3.jpg?v=1749164148" alt="초고령사회 해법에 ‘에이지테크’  정부, R&amp;D 연 1조 투자">
+              </div>
+              <div class="title">
+                초고령사회 해법에 ‘에이지테크’ 정부, R&amp;D 연 1조 투자
+              </div>
+              <div class="mainToptxt mainToptxt_reduce">
+                정부가 초고령사회 대응을 위한 핵심 전략으로 에이지테크(Age-Tech)를 공식 채택하고, 민관 협력을 통한 산업 생태계 조성에 박차를 가하고 있다. 정부는 지난 3월 Age-Tech 기반 실버경제 육성전략을 발표한 데 이어, 5월에는 민관 얼라이언스를 출범시키며 정책 방향과 실행 방안을 구체화했다. 지난 29일 서울 코엑스에서 열린
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="adv-Wrap">
+      <div class="container">
+        <div class="row">
+          
+          <div class="advBody">
+            <a href="#" target="_blank"><img src="https://img.etoday.co.kr/web/bravo_ad/ML_780130_1.jpg?2025075502" alt="KB국민은행" width="780" height="130"></a>
+          </div>
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="coverstoryWrap">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12">
+            <div class="newscont_title">
+              <span>스페셜</span> <a href="#"><span>더보기 <i class="bi bi-arrow-right-short"></i></span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2184979.jpg" alt="이희주, 넥타이 풀고 시인으로 돌아오다">
+              </div>
+              <div class="title">
+                이희주, 넥타이 풀고 시인으로 돌아오다
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                시니어 업계의 핵심 축으로 ‘하우징’이 부상하고 있다. 노인복지주택(실버타운)을 비롯한 양로시설, 요양시설 등 국내 시니어 시설의 보급률은 증가하는 고령층 수요에 비해 여전히 부족한 수준이다. 이에 따라 민간기업들이 새로운 기회를 모색하며 시장에 속속 진출하고 있다. 정부는 지난해 ‘시니어 레지던스 활성화 방안’을 발표했다. 이에 따라 그간 실버타운 설립의 걸림돌이었던 ‘토지 및 건물 소유 의무’도 완화돼, 사용권만으로도 사업 추진이 가능해졌다. 다만 요양시설은 규제 완화에 포함되지 않아, 복합 의료 돌봄을 포함한 통합형 시니어
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2180803.jpg" alt="시니어 시 쓰기, 어렵지 않다목">
+              </div>
+              <div class="title">
+                “마음속 소년·소녀 찾기” 시니어 시 쓰기, 어렵지 않다
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                시니어 업계의 핵심 축으로 ‘하우징’이 부상하고 있다. 노인복지주택(실버타운)을 비롯한 양로시설, 요양시설 등 국내 시니어 시설의 보급률은 증가하는 고령층 수요에 비해 여전히 부족한 수준이다. 이에 따라 민간기업들이 새로운 기회를 모색하며 시장에 속속 진출하고 있다. 정부는 지난해 ‘시니어 레지던스 활성화 방안’을 발표했다. 이에 따라 그간 실버타운 설립의 걸림돌이었던 ‘토지 및 건물 소유 의무’도 완화돼, 사용권만으로도 사업 추진이 가능해졌다. 다만 요양시설은 규제 완화에 포함되지 않아, 복합 의료 돌봄을 포함한 통합형 시니어
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2183852.jpg" alt="이희주, 넥타이 풀고 시인으로 돌아오다">
+              </div>
+              <div class="title">
+                이희주, 넥타이 풀고 시인으로 돌아오다
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                시니어 업계의 핵심 축으로 ‘하우징’이 부상하고 있다. 노인복지주택(실버타운)을 비롯한 양로시설, 요양시설 등 국내 시니어 시설의 보급률은 증가하는 고령층 수요에 비해 여전히 부족한 수준이다. 이에 따라 민간기업들이 새로운 기회를 모색하며 시장에 속속 진출하고 있다. 정부는 지난해 ‘시니어 레지던스 활성화 방안’을 발표했다. 이에 따라 그간 실버타운 설립의 걸림돌이었던 ‘토지 및 건물 소유 의무’도 완화돼, 사용권만으로도 사업 추진이 가능해졌다. 다만 요양시설은 규제 완화에 포함되지 않아, 복합 의료 돌봄을 포함한 통합형 시니어
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2172219.jpg" alt="요양원과 실버타운의 융합 시도… 제3의 시니어 하우징에 주목">
+              </div>
+              <div class="title">
+                요양원과 실버타운의 융합 시도… 제3의 시니어 하우징에 주목
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                시니어 업계의 핵심 축으로 ‘하우징’이 부상하고 있다. 노인복지주택(실버타운)을 비롯한 양로시설, 요양시설 등 국내 시니어 시설의 보급률은 증가하는 고령층 수요에 비해 여전히 부족한 수준이다. 이에 따라 민간기업들이 새로운 기회를 모색하며 시장에 속속 진출하고 있다. 정부는 지난해 ‘시니어 레지던스 활성화 방안’을 발표했다. 이에 따라 그간 실버타운 설립의 걸림돌이었던 ‘토지 및 건물 소유 의무’도 완화돼, 사용권만으로도 사업 추진이 가능해졌다. 다만 요양시설은 규제 완화에 포함되지 않아, 복합 의료 돌봄을 포함한 통합형 시니어
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="newscontWrap12s">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12">
+            <div class="newscont_title">
+              <span>최신 기사</span> <a href="#"><span>더보기 <i class="bi bi-arrow-right-short"></i></span></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2190807.jpg" alt="‘시니어’의 사회적 의미를 돌아보며">
+              </div>
+              <div class="title">
+                ‘시니어’의 사회적 의미를 돌아보며
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                25년간 은행에 몸담으며 가장 자주 들었던 질문은 “퇴직금은 어디에 넣는 게 안전할까요?”였다. 여윳돈을 어떻게 굴릴지, ETF는 뭘 골라야 할지, 미국 국채는 괜찮은지 등, 돈 이야기만 나오면 누구나 눈빛이 달라진다. 이러한 관심은 은퇴 이후 현금 흐름에 대한 불안에서 비롯된다. 연금 광고가 일상에 넘쳐나는 요즘, 은퇴 시기의 금융은 선택이 아닌 생존의 문제로 다가온다. 예금자보호법, 이제는 전략이다 예금자보호법은 금융회사가 파산 등으로 예금을 지급하지 못할 경우, 고객의 자산을 보호하는 제도다. 예금보험공사는 금융회사로부터
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2190777.jpg" alt="폴리텍대학, 퇴직공무원 재취업 지원 MOU">
+              </div>
+              <div class="title">
+                폴리텍대학, 퇴직공무원 재취업 지원 MOU
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                한국폴리텍대학은 지난 25일 공무원연금공단과 퇴직공무원 재취업 지원을 위한 업무협약을 체결했다고 26일 밝혔다. 이번 협약은 정년퇴직 공무원이 늘어나는 사회적 흐름에 대응해, 연금 수령 전까지의 ‘소득공백기’를 해소하고, 퇴직 후 제2의 인생 설계와 사회 참여를 적극 지원하기 위함이다. 협약에 따라 △퇴직공무원 재취업 기술교육과정 공동 운영 △재취업 설명회 및 상담 공동 운영 △공단 직원 대상 기술체험 운영 △교육과정 모집·홍보 협력 △전문강사 인력 풀(Pool) 상호 제공 등 다양한 분야에서 협력을 추진한다. 양 기관은 상호 협
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2190767.jpg" alt="내 유산, 소아암 어린이 위해 기부할까">
+              </div>
+              <div class="title">
+                내 유산, 소아암 어린이 위해 기부할까
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                한국백혈병어린이재단은 지난 24일 하나은행과 ‘신탁을 통한 기부문화 정착을 위한 업무협약(MOU)’을 체결했다고 26일 밝혔다. 이번 협약을 통해 재단은 유산기부를 희망하는 후원자들에게 전문적인 유언대용신탁 서비스를 연계해 제공한다. ‘유언대용신탁’은 기부자가 생전에 금융회사(은행, 보험사)와 자산신탁계약을 체결하고, 기부자의 사후 자산 수익자를 재단으로 지정하는 방식이다. 기존의 유언장보다 법적 안정성이 높아 유산을 기부하는 수단으로 주목받고 있다. 이번 협약을 통해 한국백혈병어린이재단은 유산 기부자의 소중한 뜻을 더 안전하고
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/285/180/2190729.jpg" alt="준비되지 않은 노후, 주저 말고 진단받아야">
+              </div>
+              <div class="title">
+                “준비되지 않은 노후, 주저 말고 진단받아야”
+              </div>
+              <div class="coverstorytxt mainToptxt_reduce">
+                서울 강남구 개포동, 1600여 세대로 구성된 영구임대아파트 단지 한가운데 자리한 강남종합사회복지관. 최근 35년 만의 대대적인 리모델링을 마치고 문을 연 이곳은 외관만 바뀐 것이 아니다. 이곳을 30년 가까이 지켜온 조준배 관장은 이번 변화의 핵심을 ‘노후 진단과 컨설팅’이라고 강조한다. 이를 위해 종합사회복지관의 역할도 변화할 필요가 있다고 말한다. “이제 복지는 더 이상 저소득층만의 것이 아닙니다. 누구나 나이 들어가며 부딪히게 되는 문제입니다.” 조 관장은 “요즘은 60대가 되어서야 비로소 자신의 노후를 돌아보는 분들이 많
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="groupNewsWarpTop">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-12">
+            <div class="theme_title">
+              [테마 기사]
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/380/240/2189377.jpg" alt="치매환자 100만명 시대… 진료 가능 치과 전국 스무 곳 남짓">
+              </div>
+              <div class="bgWhite">
+                <div class="title">
+                  치매환자 100만명 시대… 진료 가능 치과 전국 스무 곳 남짓
+                </div>
+                <div class="groupNewstxt mainToptxt_reduce">
+                  대한민국은 OECD 주요국 중 가장 빠르게 초고령사회에 진입하고 있다. 이러한 상황에서 우리는 어떤 것을 대비하고 갖춰야 할까? 고령화 시계에 가속도가 붙은 오늘날. 브라보 마이 라이프 기자들이 청년, 중년을 지나 다가올 노년을 ‘잘’ 보내기 위해 챙겨볼 만한 키워드 5가지를 꼽았다. 2025년 새해를 맞이하기 전, 해당 내용을 참고해 감수성의 방향을 설정해보자. Keyword 01. 셀프 돌봄 적지 않은 이가 돌봄은 가족, 요양보호사, 간병인 등 타인과의 관계가 주축이라 여긴다. 공동체의 시각에서 바라보고 있다는 의미다. 하지만
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/380/240/2179447.jpg" alt="친환경 농산물 그 오해와 진실">
+              </div>
+              <div class="bgWhite">
+                <div class="title">
+                  친환경 농산물 그 오해와 진실
+                </div>
+                <div class="groupNewstxt mainToptxt_reduce">
+                  1990년대 초반의 일이다. 그때도 원자력발전소 건설은 인근 지역 주민들의 반발로 난항을 겪는 일이 빈번했다. 사회심리학자가 중심이 된 연구진이 주민들은 왜 원자력발전소 건설에 반대하는지 그 이유를 심층적으로 탐색한 결과, 그곳에서 핵폐기물이 나온다는 오해가 과도한 불안과 근거 없는 공포를 불러일으킨다는 걸 확인했다. 이후 주민들의 공포와 불안을 불식시키기 위해 원자력발전소에서 배출되는 건 핵폐기물이 아니라 원자력 부산물이며, 부산물은 선진국인 독일의 기술을 받아들여 안전하고 철저하게 관리한다는 사실을 주민 설명회를 비롯한 다양한
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="thumnail">
+                <img src="https://img.etoday.co.kr/crop/380/240/2186843.jpg" alt="제때 받지 못한 돌봄, 노인 우울증 키운다">
+              </div>
+              <div class="bgWhite">
+                <div class="title">
+                  “제때 받지 못한 돌봄, 노인 우울증 키운다”
+                </div>
+                <div class="groupNewstxt mainToptxt_reduce">
+                  노인 돌봄은 단순한 제공 여부보다 ‘시점’이 정신건강에 더 큰 영향을 미친다는 연구 결과가 나왔다. 제때 돌봄을 받지 못한 노인은 우울 증상이 악화될 가능성이 높다는 분석이다. 18일 한국노년학회지 ‘한국노년학’ 6월호에 게재된 서울대 아동가족학과 유하은 박사과정 연구원과 김경민 교수의 공동연구에 따르면, 돌봄 개시 시점과 적절성이 노년기 우울 증상에 유의미한 영향을 미치는 것으로 나타났다. 연구진은 2008년부터 2022년까지 15년간의 고령화연구패널조사(KLoSA) 자료를 바탕으로, 돌봄 수혜자로의 전환에 따른 우울 증상의 변
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="group-newslistWrap">
+      <div class="container">
+        <div class="row">
+          테마 기사 sub - 최대 3개 그룹
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row" id="categoryNews">
+      <div class="container">
+        <div class="row">
+          카테고리 기사
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <div class="row">
+      <div class="container">
+        <div class="row">
+          특별 링크
+        </div> <!-- row End with bootstrap --->
+      </div> <!-- container End with bootstrap --->
+    </div> <!-- row End with bootstrap --->
+
+    <!-- 풋터 --->
+    <div class="row" id="footerContainer">
+      <div class="container">
+        <div class="row">          
+          <div class="col-lg-3">
+            <div class="footerLogo"><img src="../assets/images/openai_log.png" alt="logo"></div>
+          </div>
+          <div class="col-lg-7">
+            <div class="footerInfo">
+              <ul class="footMenu">
+                <li>
+                        <a href="#" target="_blank"><span class="first">회사소개</span></a> 
+                    ㅣ  <a href="javascript:;" onclick="footer_popup('tab01')"><span>이용약관</span></a> 
+                    ㅣ  <a href="javascript:;" onclick="footer_popup('tab02')"><span>개인정보처리방침</span></a>
+                    ㅣ  <a href="javascript:;" onclick="footer_popup('tab03')"><span>청소년보호정책</span></a> 
+                    ㅣ  <a href="#" target="_blank"><span>공지사항</span></a>
+                    ㅣ  <a href="#"><span>사이트맵</span></a>
+
+                </li>
+              </ul>
+              <ul class="footerInfo">
+                <li>
+                  <li>서울시 영등포구 양산로 213(영등포동7가 206번지)</li>
+                <li>TEL 02-2637 - 9191 ~ 3 | FAX 02 - 2631 - 2336 | E-mail admin@pydp.or.kr</li>
+                <li>발행일자 : 2014.02.07 ㅣ 발행인 : 홍길동 ㅣ 편집인 : 홍길남 ㅣ 청소년보호책임자 : 홍길서</li>
+                </li>
+              </ul>
+              <ul class="copyRight">
+                <li>무단전재, 복사, 재배포, AI학습 이용 등을 금지합니다.</li>
+                <li>&copy; 2025. 영등포교회. ALL RIGHT RESERVED. <!--- Published by DIKI(danny.j.park)  --></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2">            
+            <!--패밀리사이트-->
+            <div class="footerFamily"> 
+                <a class="footeSelectUp">패밀리사이트</a>
+            </div>
+            <div class="footerFamilyOpen"> 
+                <ul>
+                    <li><a href="https://www.pydp.or.kr/" target="_blank">영등포교회</a></li>
+                    <li><a href="https://www.youtube.com/@ydpchurchch1" target="_blank">실시간 예배</a></li>
+                    <li><a href="http://bible.pydp.or.kr/m3/html/" target="_blank">성경필사</a></li>
+                    <li><a href="https://www.gospeledi.com/v2/church/515" target="_blank">에디 전도 플랫폼</a></li>
+                </ul>
+            </div>
+            <!--//패밀리사이트-->
+          </div>
+        </div> <!-- 풋터 row --->
+      </div> <!-- 풋터 container --->
+
+    </div> <!-- row End with bootstrap --->
+  </div> <!-- container End  with bootstrap -->
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="../assets/js/jquery-3.1.1.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>  
+
+  <script type="text/javascript">
+    $(".footeSelectUp").click(function(){
+      if($(".footerFamilyOpen").css("display") == "block"){
+        $(".footerFamilyOpen").css('display','none');
+        $(".footerFamily a").removeClass("footeSelect").addClass("footeSelectUp");
+      } else {
+        $(".footerFamilyOpen").css('display','block');
+        $(".footerFamily a").removeClass("footeSelectUp").addClass("footeSelect")
+      }
+    });
+
+    $("#trigger").click(function(){
+        if($("#searchLayer").css("display") == "block") {
+           $("#searchLayer").css('display','none');
+           $(".search a i").removeClass("bi bi-x-lg").addClass("bi bi-search");
+        } else {
+          $("#searchLayer").css('display','block');
+          $(".search a i").removeClass("bi bi-search").addClass("bi bi-x-lg");
+        }
+      });
+
+    function footer_popup(tabno) {
+				var popUrl = "/popup/popup_tab?tabno="+tabno;
+				var popOption = "width=940, height=760, resizable=no, scrollbars=no, status=no;";
+				window.open(popUrl, "footer_popup",popOption);
+			};
+  </script>
+
+</body>
+</html>
